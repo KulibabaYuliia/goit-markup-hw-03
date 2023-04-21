@@ -1,3 +1,22 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   --primary-white-color: #ffffff;
   --accent-dark-color: #2e2f42;
@@ -29,20 +48,30 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+  border: 1px solid transparent;
 }
 
-/* .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  border: 0;
-  clip: rect(0 0 0 0);
-} */
+.container {
+  width: 1128px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 1px solid tomato;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 
 /* logo */
+
+.page-header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e7e9fc;
+}
 
 .logo {
   color: var(--brand-color);
@@ -93,22 +122,26 @@ body {
 
 .hero-section {
   background-color: var(--accent-dark-color);
+  text-align: center;
 }
 
 .hero-title {
+  margin-bottom: 48px;
+
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: var(--primary-white-color);
-  text-align: center;
 }
 
 .hero-btn {
+  padding: 16px 32px;
   background-color: var(--brand-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   letter-spacing: 0.04em;
   color: var(--primary-white-color);
+  text-align: center;
 }
 
 .hero-btn:hover,
@@ -118,9 +151,8 @@ body {
 
 /* principles section */
 
-.principles-item-title,
-.ourteam-item-title,
-.portfolio-item-title {
+.item-title {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -128,9 +160,7 @@ body {
   color: var(--accent-dark-color);
 }
 
-.principles-item-text,
-.portfolio-item-text,
-.ourteam-item-text {
+.item-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -138,14 +168,14 @@ body {
 
 /* our work section */
 
-.ourwork-title,
-.ourteam-title {
+.section-title {
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--accent-dark-color);
   text-align: center;
+  margin-bottom: 72px;
 }
 
 /* our team section */
@@ -158,15 +188,21 @@ body {
   background-color: var(--primary-white-color);
 }
 
+.item-img {
+  margin-bottom: 32px;
+}
+
 /* main page end */
 
 /* footer */
 
-.footer-sec {
+.page-footer {
   background-color: var(--accent-dark-color);
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
-.logo-footer {
+.logo-footer-text {
   color: var(--light-text-color);
 }
 
@@ -175,6 +211,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--light-text-color);
+  margin-top: 16px;
 }
 
 /* portfolio page */
@@ -196,4 +233,8 @@ body {
   border-radius: 4px;
   letter-spacing: 0.04em;
   color: var(--primary-white-color);
+}
+
+.portfolio-list {
+  margin-top: 72px;
 }
