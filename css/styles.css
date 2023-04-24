@@ -217,6 +217,10 @@ body {
 
 /* our work section */
 
+.ourwork-sec {
+  padding-top: 0px;
+}
+
 .section-title {
   margin-bottom: 72px;
 
@@ -231,7 +235,6 @@ body {
 /* our team section */
 
 .ourteam-sec {
-  padding-top: 0;
   background-color: var(--light-text-color);
 }
 
