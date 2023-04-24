@@ -9,7 +9,9 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet" />
-    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>WebStudio</title>
   </head>
@@ -18,22 +20,24 @@
     <!-- header -->
     <header class="page-header">
       <!-- main navigation -->
-      <div class="container">
+      <div class="container container-header">
         <nav class="navigation">
           <a href="./index.html" class="link logo">Web<span class="logo-header">Studio</span></a>
           <ul class="list nav-list">
-            <li><a href="./index.html" class="link nav-link">Studio</a></li>
-            <li><a href="./portfolio.html" class="link nav-link">Portfolio</a></li>
-            <li><a href="" class="link nav-link">Contacts</a></li>
+            <li class="nav-item"><a href="./index.html" class="link nav-link">Studio</a></li>
+            <li class="nav-item"><a href="./portfolio.html" class="link nav-link">Portfolio</a></li>
+            <li class="nav-item"><a href="" class="link nav-link">Contacts</a></li>
           </ul>
         </nav>
         <!-- header contacts -->
         <address class="adr-contacts">
-          <ul class="list">
-            <li>
+          <ul class="list adr-contacts-list">
+            <li class="address-item">
               <a href="mailto:info@devstudio.com" class="link contacts-link">info@devstudio.com</a>
             </li>
-            <li><a href="tel:+110001111111" class="link contacts-link">+11 (000) 111-11-11</a></li>
+            <li class="address-item">
+              <a href="tel:+110001111111" class="link contacts-link">+11 (000) 111-11-11</a>
+            </li>
           </ul>
         </address>
       </div>
@@ -42,7 +46,7 @@
     <main>
       <!-- hero section -->
       <section id="hero" class="hero-section">
-        <div class="container">
+        <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button type="button" class="hero-btn btn">Order Service</button>
         </div>
@@ -51,29 +55,29 @@
       <section id="principles" class="section">
         <div class="container">
           <h2 hidden class="visually-hidden">Principles</h2>
-          <ul class="list principles-list">
-            <li>
+          <ul class="list section-list">
+            <li class="section-list-item">
               <h3 class="principles-item-title item-title">Strategy</h3>
               <p class="principles-item-text item-text">
                 Our goal is to identify the business problem to walk away with the perfect and
                 creative solution.
               </p>
             </li>
-            <li>
+            <li class="section-list-item">
               <h3 class="principles-item-title item-title">Punctuality</h3>
               <p class="principles-item-text item-text">
                 Bring the key message to the brand's audience for the best price within the shortest
                 possible time.
               </p>
             </li>
-            <li>
+            <li class="section-list-item">
               <h3 class="principles-item-title item-title">Diligence</h3>
               <p class="principles-item-text item-text">
                 Research and confirm brands that present the strongest digital growth opportunities
                 and minimize risk.
               </p>
             </li>
-            <li>
+            <li class="section-list-item">
               <h3 class="principles-item-title item-title">Technologies</h3>
               <p class="principles-item-text item-text">
                 Design practice focused on digital experiences. We bring forth a deep passion for
@@ -84,25 +88,25 @@
         </div>
       </section>
       <!-- ourwork secion -->
-      <section id="ourwork" class="section">
+      <section id="ourwork" class="ourwork-sec section">
         <div class="container">
           <h2 class="ourwork-title section-title">What are we doing</h2>
-          <ul class="list">
-            <li>
+          <ul class="list section-list">
+            <li class="section-list-item">
               <img
                 src="./images/whatwedo/websites.jpg"
                 alt="Monitor with opened website on it"
                 width="360"
                 height="300" />
             </li>
-            <li>
+            <li class="section-list-item">
               <img
                 src="./images/whatwedo/aplications.jpg"
                 alt="Mobile phone with opened aplication"
                 width="360"
                 height="300" />
             </li>
-            <li>
+            <li class="section-list-item">
               <img
                 src="./images/whatwedo/mobileversions.jpg"
                 alt="Laptop and phone with same opened website"
@@ -116,46 +120,54 @@
       <section id="team" class="section ourteam-sec">
         <div class="container">
           <h2 class="ourteam-title section-title">Our Team</h2>
-          <ul class="list">
-            <li class="ourteam-item">
+          <ul class="list section-list">
+            <li class="ourteam-item section-list-item">
               <img
                 src="./images/team/markguerrero.jpg"
                 alt="portret of Mark Guerrero"
                 width="264"
                 height="260"
                 class="item-img" />
-              <h3 class="ourteam-item-title item-title">Mark Guerrero</h3>
-              <p class="ourteam-item-text item-text">Product Designer</p>
+              <div class="ourteam-card-text">
+                <h3 class="ourteam-item-title item-title">Mark Guerrero</h3>
+                <p class="ourteam-item-text item-text">Product Designer</p>
+              </div>
             </li>
-            <li class="ourteam-item">
+            <li class="ourteam-item section-list-item">
               <img
                 src="./images/team/tomford.jpg"
                 alt="portret of Tom Ford"
                 width="264"
                 height="260"
                 class="item-img" />
-              <h3 class="ourteam-item-title item-title">Tom Ford</h3>
-              <p class="ourteam-item-text item-text">Frontend Developer</p>
+              <div class="ourteam-card-text">
+                <h3 class="ourteam-item-title item-title">Tom Ford</h3>
+                <p class="ourteam-item-text item-text">Frontend Developer</p>
+              </div>
             </li>
-            <li class="ourteam-item">
+            <li class="ourteam-item section-list-item">
               <img
                 src="./images/team/camilagarcia.jpg"
                 alt="portret of Camila Garcia"
                 width="264"
                 height="260"
                 class="item-img" />
-              <h3 class="ourteam-item-title item-title">Camila Garcia</h3>
-              <p class="ourteam-item-text item-text">Marketing</p>
+              <div class="ourteam-card-text">
+                <h3 class="ourteam-item-title item-title">Camila Garcia</h3>
+                <p class="ourteam-item-text item-text">Marketing</p>
+              </div>
             </li>
-            <li class="ourteam-item">
+            <li class="ourteam-item section-list-item">
               <img
                 src="./images/team/danielwilson.jpg"
                 alt="portret of Daniel Wilson"
                 width="264"
                 height="260"
                 class="item-img" />
-              <h3 class="ourteam-item-title item-title">Daniel Wilson</h3>
-              <p class="ourteam-item-text item-text">UI Designer</p>
+              <div class="ourteam-card-text">
+                <h3 class="ourteam-item-title item-title">Daniel Wilson</h3>
+                <p class="ourteam-item-text item-text">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
